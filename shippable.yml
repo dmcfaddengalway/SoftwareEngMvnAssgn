@@ -1,0 +1,13 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  
+name: SoftEngMvn_runCI
+type: runCI
+steps:
+  - IN: SoftEngMvn_ciRepo
+build:
+  ci:
+    - mvn install
+    - nmvn build
