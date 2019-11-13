@@ -10,4 +10,4 @@ steps:
 build:
   ci:
     - mvn install
-    - mvn build
+    - mvn compile
