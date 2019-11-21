@@ -21,6 +21,11 @@ public class Module {
 		this.coursesRegistered = coursesRegistered;
 	}
 
+	public Module(String moduleName, String moduleId) {
+		this.name = moduleName;
+		this.idCode = moduleId;
+	}
+
 	public String getName() {
 		return name;
 	}

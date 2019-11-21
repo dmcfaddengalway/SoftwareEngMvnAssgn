@@ -9,13 +9,13 @@ public class Programme {
 	String courseName;
 	ArrayList<Module> modules = new ArrayList<>();
 	ArrayList<Student> studentsRegistered = new ArrayList<>();
-	DateTime startDate;
-	DateTime endDate;
+	LocalDate startDate;
+	LocalDate endDate;
 	
 	// Constructor
 	public Programme(String courseName, ArrayList<Module> modules,
-			ArrayList<Student> studentsRegistered, DateTime startDate,
-			DateTime endDate) {
+			ArrayList<Student> studentsRegistered, LocalDate startDate,
+			LocalDate endDate) {
 		super();
 		this.courseName = courseName;
 		this.modules = modules;
@@ -36,11 +36,11 @@ public class Programme {
 		return studentsRegistered;
 	}
 
-	public DateTime getStartDate() {
+	public LocalDate getStartDate() {
 		return startDate;
 	}
 
-	public DateTime getEndDate() {
+	public LocalDate getEndDate() {
 		return endDate;
 	}
 
@@ -56,11 +56,11 @@ public class Programme {
 		this.studentsRegistered = studentsRegistered;
 	}
 
-	public void setStartDate(DateTime startDate) {
+	public void setStartDate(LocalDate startDate) {
 		this.startDate = startDate;
 	}
 
-	public void setEndDate(DateTime endDate) {
+	public void setEndDate(LocalDate endDate) {
 		this.endDate = endDate;
 	}
 	

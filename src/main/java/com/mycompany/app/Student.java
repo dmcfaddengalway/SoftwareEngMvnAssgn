@@ -27,6 +27,12 @@ public class Student {
 		this.programmesRegistered = programmesRegistered;
 	}
 	
+	public Student(String name, int age, int id) {
+		this.name = name;
+		this.age = age;
+		this.studentID = id;
+	}
+
 	public String getName() {
 		return name;
 	}
