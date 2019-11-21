@@ -1,5 +1,7 @@
 package com.mycompany.app;
 
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 import org.joda.time.LocalDate;
 
 import org.junit.*;
@@ -7,9 +9,9 @@ import java.util.*;
 
 public class StudentTest {
 
-	private String name = "Daniel";
-    private int age = 22;
-    private int id = 13579;
+	private String studentName = "Daniel";
+    private int studentAge = 22;
+    private int studentID = 13579;
     
     private String moduleName = "SoftwareEng";
     private String moduleId = "CT419";
@@ -18,7 +20,7 @@ public class StudentTest {
     private LocalDate startDate = new LocalDate(2019, 9, 14);
     private LocalDate endDate = new LocalDate(2020, 1, 16);
     
-    private Student newStudent1 = new Student(name, age, id);    
+    private Student newStudent1 = new Student(studentName, studentAge, studentID);    
     
     private Module newModule = new Module(moduleName, moduleId);
     
@@ -36,6 +38,25 @@ public class StudentTest {
         moduleRegistered.add(newModule);
         courses = new ArrayList<Programme>();
         courses.add(newProgramme);     
+    }
+    
+    @Test
+    public void shouldGetStudentName() {
+        assertThat(studentName, is(newStudent1.getName()));
+    }
+    @Test
+    public void shouldGetStudentAge() {
+        assertThat(studentAge, is(newStudent1.getAge()));
+    }
+ 
+    @Test
+    public void shouldGetUserName() {
+        assertThat(studentName + studentAge, is(newStudent1.getUsername()));
+    }
+
+    @Test
+    public void shouldGetId() {
+        assertThat(studentID, is(newStudent1.getStudentID()));
     }
 
 }

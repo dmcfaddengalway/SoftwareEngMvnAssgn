@@ -65,7 +65,7 @@ public class Student {
 		this.studentID = studentID;
 	}
 	
-	public String getUsername(String name, int age) {
+	public String getUsername() {
 		return name + Integer.toString(age);
 	}
 	
