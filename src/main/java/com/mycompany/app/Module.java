@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 public class Module {
 	
-	//Instance Varibales
+	//Instance Variables
 	String name;
 	String idCode;
 	ArrayList<Student> studentsRegistered = new ArrayList<>();
 	ArrayList<Programme> coursesRegistered = new ArrayList<>();
 	
+	// Constructor
 	public Module(String name, String idCode,
 			ArrayList<Student> studentsRegistered,
 			ArrayList<Programme> coursesRegistered) {
