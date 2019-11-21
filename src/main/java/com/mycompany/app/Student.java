@@ -32,61 +32,64 @@ public class Student {
 		this.age = age;
 		this.studentID = id;
 	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public DateTime getDob() {
-		return dob;
-	}
-
-	public void setDob(DateTime dob) {
-		this.dob = dob;
-	}
-
-	public int getStudentID() {
-		return studentID;
-	}
-
-	public void setStudentID(int studentID) {
-		this.studentID = studentID;
-	}
 	
-	public String getUsername() {
-		return name + Integer.toString(age);
-	}
+	// Methods
 	
-	public String setUserName(String newUsername) {
-		return newUsername;
-	}
-
-	public ArrayList<String> getCoursesRegistered() {
-		return coursesRegistered;
-	}
-
-	public void setCoursesRegistered(ArrayList<String> coursesRegistered) {
-		this.coursesRegistered = coursesRegistered;
-	}
-
-	public ArrayList<String> getProgrammesRegistered() {
-		return programmesRegistered;
-	}
-
-	public void setProgrammesRegistered(ArrayList<String> programmesRegistered) {
-		this.programmesRegistered = programmesRegistered;
-	}
+		// Setters & Getters
+		public String getName() {
+			return name;
+		}
+	
+		public void setName(String name) {
+			this.name = name;
+		}
+	
+		public int getAge() {
+			return age;
+		}
+	
+		public void setAge(int age) {
+			this.age = age;
+		}
+	
+		public DateTime getDob() {
+			return dob;
+		}
+	
+		public void setDob(DateTime dob) {
+			this.dob = dob;
+		}
+	
+		public int getStudentID() {
+			return studentID;
+		}
+	
+		public void setStudentID(int studentID) {
+			this.studentID = studentID;
+		}
+		
+		public String getUsername() {
+			return name + Integer.toString(age);
+		}
+		
+		public String setUserName(String newUsername) {
+			return newUsername;
+		}
+	
+		public ArrayList<String> getCoursesRegistered() {
+			return coursesRegistered;
+		}
+	
+		public void setCoursesRegistered(ArrayList<String> coursesRegistered) {
+			this.coursesRegistered = coursesRegistered;
+		}
+	
+		public ArrayList<String> getProgrammesRegistered() {
+			return programmesRegistered;
+		}
+	
+		public void setProgrammesRegistered(ArrayList<String> programmesRegistered) {
+			this.programmesRegistered = programmesRegistered;
+		}
 
 }

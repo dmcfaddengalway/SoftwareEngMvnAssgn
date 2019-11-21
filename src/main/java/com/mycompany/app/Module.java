@@ -25,38 +25,52 @@ public class Module {
 		this.name = moduleName;
 		this.idCode = moduleId;
 	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getIdCode() {
-		return idCode;
-	}
 	
-	public ArrayList<Student> getStudentsRegistered() {
-		return studentsRegistered;
-	}
+	// Methods
+	public void addStudents(Student student) {
+        if(!studentsRegistered.contains(student)) {
+            studentsRegistered.add(student);
+        }
+    }
+
+    public void addCourses(Programme programme) {
+        if(!coursesRegistered.contains(programme)) {
+            coursesRegistered.add(programme);
+        }
+    }
+
+    	// Setters & Getters
+		public String getName() {
+			return name;
+		}
 	
+		public String getIdCode() {
+			return idCode;
+		}
+		
+		public ArrayList<Student> getStudentsRegistered() {
+			return studentsRegistered;
+		}
+		
+		
+		public ArrayList<Programme> getCoursesRegistered() {
+			return coursesRegistered;
+		}
 	
-	public ArrayList<Programme> getCoursesRegistered() {
-		return coursesRegistered;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setIdCode(String idCode) {
-		this.idCode = idCode;
-	}
-
-	public void setStudentsRegistered(ArrayList<Student> studentsRegistered) {
-		this.studentsRegistered = studentsRegistered;
-	}
-
-	public void setCoursesRegistered(ArrayList<Programme> coursesRegistered) {
-		this.coursesRegistered = coursesRegistered;
-	}
+		public void setName(String name) {
+			this.name = name;
+		}
+	
+		public void setIdCode(String idCode) {
+			this.idCode = idCode;
+		}
+	
+		public void setStudentsRegistered(ArrayList<Student> studentsRegistered) {
+			this.studentsRegistered = studentsRegistered;
+		}
+	
+		public void setCoursesRegistered(ArrayList<Programme> coursesRegistered) {
+			this.coursesRegistered = coursesRegistered;
+		}
 
 }
