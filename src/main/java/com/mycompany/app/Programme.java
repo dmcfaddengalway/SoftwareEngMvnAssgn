@@ -23,45 +23,59 @@ public class Programme {
 		this.startDate = startDate;
 		this.endDate = endDate;
 	}
-
-	public String getCourseName() {
-		return courseName;
+	
+	// Methods
+	public void addModules(Module module) {
+		if(!modules.contains(module)) {
+			modules.add(module);
+	    }
 	}
 
-	public ArrayList<Module> getModules() {
-		return modules;
+	public void addStudents(Student student) {
+		if(!studentsRegistered.contains(student)) {
+			studentsRegistered.add(student);
+		}
 	}
-
-	public ArrayList<Student> getStudentsRegistered() {
-		return studentsRegistered;
-	}
-
-	public LocalDate getStartDate() {
-		return startDate;
-	}
-
-	public LocalDate getEndDate() {
-		return endDate;
-	}
-
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
-	}
-
-	public void setModules(ArrayList<Module> modules) {
-		this.modules = modules;
-	}
-
-	public void setStudentsRegistered(ArrayList<Student> studentsRegistered) {
-		this.studentsRegistered = studentsRegistered;
-	}
-
-	public void setStartDate(LocalDate startDate) {
-		this.startDate = startDate;
-	}
-
-	public void setEndDate(LocalDate endDate) {
-		this.endDate = endDate;
-	}
+	
+		// Setters & Getters
+		public String getCourseName() {
+			return courseName;
+		}
+	
+		public ArrayList<Module> getModules() {
+			return modules;
+		}
+	
+		public ArrayList<Student> getStudentsRegistered() {
+			return studentsRegistered;
+		}
+	
+		public LocalDate getStartDate() {
+			return startDate;
+		}
+	
+		public LocalDate getEndDate() {
+			return endDate;
+		}
+	
+		public void setCourseName(String courseName) {
+			this.courseName = courseName;
+		}
+	
+		public void setModules(ArrayList<Module> modules) {
+			this.modules = modules;
+		}
+	
+		public void setStudentsRegistered(ArrayList<Student> studentsRegistered) {
+			this.studentsRegistered = studentsRegistered;
+		}
+	
+		public void setStartDate(LocalDate startDate) {
+			this.startDate = startDate;
+		}
+	
+		public void setEndDate(LocalDate endDate) {
+			this.endDate = endDate;
+		}
 	
 }
