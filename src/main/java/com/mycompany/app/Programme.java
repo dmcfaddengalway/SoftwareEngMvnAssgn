@@ -26,9 +26,7 @@ public class Programme {
 	
 	// Methods
 	public void addModules(Module module) {
-		if(!modules.contains(module)) {
-			modules.add(module);
-	    }
+		modules.add(module);
 	}
 
 	public void addStudents(Student student) {
